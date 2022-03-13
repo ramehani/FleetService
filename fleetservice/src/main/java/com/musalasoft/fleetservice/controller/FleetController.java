@@ -183,7 +183,7 @@ public class FleetController {
 		return rsp;
 	}
 
-	@RequestMapping(value = "/getDroneLoadedDetails/{serial_no}", method = RequestMethod.POST)
+	@RequestMapping(value = "/getDroneLoadedDetails/{serial_no}", method = RequestMethod.GET)
 	public ResponseHandler getDroneLoaded(@PathVariable("serial_no") String serial_no) {
 		ResponseHandler rsp = new ResponseHandler();
 
